@@ -1,0 +1,69 @@
+// Función definida por el usuario que se llamará cuando un cliente acceda 
+// A la ruta del directorio raíz del host ESP8266
+void handleRoot() {
+  // Simplemente envía una respuesta 'OK' (200) al cliente,
+  // y una cadena de texto sin formato con uso.
+  server.send(200, "text/plain", String("Hola desde el ESP8266! Uso: navegar por") +
+              String(" /setleds?r=XX&g=YY&b=ZZ cambiar XX/YY/ZZ por 1 o 0."));
+}
+
+// Función definida por el usuario que se llamará cuando un cliente acceda 
+// a la ruta /setleds del host ESP8266
+void handleSetLeds() {
+  // Podemos leer el estado deseado de los LEDs de los parámetros esperados que se deben pasar en la URL. 
+  // Esperamos dos parámetros "r", "g" y "b".
+  String rStatus = server.arg("r");
+  String gStatus = server.arg("g");
+  String bStatus = server.arg("b");
+  
+  // Compruebe si la URL incluye un cambio del estado del LED
+  bool url_check = false;
+  if( (rStatus == "1") || (rStatus == "0") || (gStatus == "1") || (gStatus == "0") || (bStatus == "1") || (bStatus == "0") )
+    url_check = true;
+
+  // Verificamos los estados recibidos para saber que pin activar y cual desactivar 
+  // dependiendo del valor enviado por el cliente
+  if(rStatus == "1")
+    digitalWrite(rPin, HIGH);
+  else
+    digitalWrite(rPin, LOW);
+
+  if(gStatus == "1")
+    digitalWrite(gPin, HIGH);
+  else
+    digitalWrite(gPin, LOW);
+
+  if(bStatus == "1")
+    digitalWrite(bPin, HIGH);
+  else
+    digitalWrite(bPin, LOW);
+
+  if (url_check)
+    // Si hemos configurado el LED en el estado solicitado, el servidor web devolvera una respuesta "OK" (200). 
+    // También incluimos el número de milisegundos desde que el programa comenzó a ejecutarse.
+    // Nota: Este número se reseteara (volverá a cero), después de aproximadamente 50 días.
+    server.send(200, "text/plain", "LED status changed! (" + String(millis()) + ")");
+  else
+    server.send(200, "text/plain", "LED status unchanged! (" + String(millis()) + ")");
+}
+
+// Si el cliente solicita otra URL que no sea el directorio raíz o la ruta /setled:
+void handleNotFound() {
+  // Construimos un mensaje para ser devuelto al cliente
+  String message = "File Not Found\n\n";
+  // Que incluye lo que URI fue solicitado
+  message += "URI: ";
+  message += server.uri();
+  // Qué método se utilizó
+  message += "\nMethod: ";
+  message += (server.method() == HTTP_GET) ? "GET" : "POST";
+  // Y qué parámetros se pasaron
+  message += "\nArguments: ";
+  message += server.args();
+  message += "\n";
+  for (uint8_t i = 0; i < server.args(); i++) {
+    message += " " + server.argName(i) + ": " + server.arg(i) + "\n";
+  }
+  // La respuesta, como se esperaba, es un error "Not Found" (404)
+  server.send(404, "text/plain", message);
+}

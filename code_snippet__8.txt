@@ -1,0 +1,6 @@
+
+// La funcion loop, simplemente escucha las peticiones entrantes 
+// del cliente a nuestro servidor web alojado en el ESP8266
+void loop(void) {
+  server.handleClient();
+}

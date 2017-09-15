@@ -1,0 +1,40 @@
+
+// En la función de configuración inicializamos las diferentes cosas 
+// que serán necesarias en nuestro programa, así como configurar el hardware
+void setup(void) {
+  // Configure los pines del LED para que actúen como salidas digitales
+  // e inicializandolo apagado (LOW)
+  pinMode(rPin, OUTPUT);
+  pinMode(gPin, OUTPUT);
+  pinMode(bPin, OUTPUT);
+  digitalWrite(rPin, LOW);
+  digitalWrite(gPin, LOW);
+  digitalWrite(bPin, LOW);
+
+  // Inicio la comunicación serie para fines de depuración
+  Serial.begin(115200);
+  // Inicializar el cliente WiFi e intentar conectarse a la red
+  WiFi.begin(ssid, password);
+  Serial.println("");
+
+  // Esperar una conexión correcta
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  // Para propósitos de depuración, imprima el ID de red y la dirección IP asignada
+  Serial.println("");
+  Serial.print("Connected to ");
+  Serial.println(ssid);
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+
+  // Asociar las URL con las funciones que van a manejar las solicitudes del cliente
+  server.on("/", HTTP_GET, handleRoot);
+  server.on("/setleds", HTTP_GET, handleSetLeds);
+  server.onNotFound(handleNotFound);
+
+  // Empezar a ejecutar el servidor web
+  server.begin();
+  Serial.println("HTTP server started");
+}

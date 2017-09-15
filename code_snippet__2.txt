@@ -1,0 +1,17 @@
+// Incluimos las bibliotecas que usaremos en todo el código
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <ESP8266WebServer.h>
+
+// Defina el SSID y la contraseña de su red Wi-Fi
+const char* ssid = "NOMBRE-DE-LA-RED-WIFI";
+const char* password = "CONTRASEÑA-DE-LA-RED-WIFI";
+
+// Instancia la clase ESP8266WebServer, pasando el argumento 80 
+// Para el puerto que el servidor escuchará.
+ESP8266WebServer server(80);
+
+// Defina las variables con los valores de pin donde están conectados los LED
+const int rPin = 14;
+const int gPin = 13;
+const int bPin = 12;
