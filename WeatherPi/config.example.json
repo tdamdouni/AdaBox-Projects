@@ -1,0 +1,13 @@
+{
+  "FORECAST_IO_KEY": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "LATITUDE": "xxx.xxx",
+  "LONGITUDE": "xxx.xxx",
+  "ADAFRUIT_IO_KEY_DASHBOARD": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "ADAFRUIT_IO_KEY_SENSORS": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "THINGSPEAK_API_KEY": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "THREADING_TIMER": 100,
+  "MATRIX_BRIGHTNESS": 1,
+  "BLINKT_BRIGHTNESS": 0.05,
+  "UNICORN_VERSION":"HD",
+  "UNICORN_BRIGHTNESS": 1.0
+}

@@ -1,0 +1,5 @@
+requests
+blinkt
+pillow
+unicornhat
+unicornhathd
