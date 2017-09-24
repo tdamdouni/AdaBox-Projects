@@ -1,0 +1,5 @@
+codecov:
+  branch: master
+  token: secret:Q0TkVdbWEq7bEv6q6oVNbRosgDdfyzz7kNB3EXgdwmzAJYP+bjxiSl0KoZIMuhvf1JXjXdXGEF1tZB13ja5tulznTuVk+D9EorZ/RofpMew=
+coverage:
+  precision: 2

@@ -1,0 +1,9 @@
+This is a SmartThings Device Type and Arduino Sketch to configure and control blinds in SmartThings using an ESP8266-based Wifi microcontroller. I used the Adafruit Feather Huzzah, but others will also work. If you're looking for something similar which uses a SmartThings shield, check out my BlindsController repository. I'm using these with the Shangri-La Sheer Shades by intercepting the "power wand" that ships with them - sending commands out to the blinds from the pins of the microcontroller, while intercepting signals from the wand using a bank of MOSFETs and triggering up and down events on the microcontroller. The effect is a working wand that harmonizes with the SmartApp.
+
+To automate your blinds, you'll need to install the SmartThings SmartApp and device type (compile the sketch with the Wifi SSID and password so it can connect), wire up the microcontroller to your blinds (mine had a convenient 4 pin JST connector for this purpose), and probably tweak the timeouts a bit for your own motorized shades.
+
+I've built OTA firmware updating into this device: navigate to http://<deviceip>/update and you'll be able to upload new sketches to it.
+
+For more on building firmware for the ESP8266, which requires a custom device type, visit http://makezine.com/2015/04/01/installing-building-arduino-sketch-5-microcontroller/
+
+Happy hacking!

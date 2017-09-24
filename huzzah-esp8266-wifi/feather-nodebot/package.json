@@ -1,0 +1,25 @@
+{
+  "name": "nodebots2017",
+  "version": "1.0.0",
+  "description": "nodebots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodebot",
+    "feather",
+    "johnny-five"
+  ],
+  "dependencies": {
+    "azure-iot-device": "1.1.0",
+    "azure-iot-device-amqp": "1.1.0",
+    "etherport-client": "^0.1.0",
+    "firmata": "0.14.1",
+    "johnny-five": "^0.9.32",
+    "moment": "^2.17.1"
+  },
+  "author": "rachel weil",
+  "license": "ISC"
+}

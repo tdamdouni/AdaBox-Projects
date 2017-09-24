@@ -1,0 +1,33 @@
+/**
+ * Variable Defines for Feather OLED Temp
+ * Created by Joseph D. Harry, January 31, 2017.
+ * Released GPL 3
+ */
+#ifndef Pubvars_h
+#define Pubvars_h
+
+class Varstore {
+    public:
+        const char* readSSID(void);
+        const char* readPassword(void);
+        const char* readDeviceName(void);
+        const int readDeviceID(void);
+        const int readButtonPinIP(void);
+        const int readButtonPinTemp(void);
+        const int readButtonPinDisplay(void);
+        const int readServerPort(void);
+        char* readHardwareID(void);
+        char* setHardwareID(char* id);
+
+    private:
+        const int _buttonPinIP          =   0;                          // This will show your IP
+        const int _buttonPinTemp        =   16;                         // This will show your Temp
+        const int _buttonPinDisplay     =   2;                          // This will show your Temp
+        const char* _ssid               =   "SSID";                     // Enter your SSID
+        const char* _password           =   "PASSWORD";                 // Enter your Password
+        const char* _deviceName         =   "DeviceID";                 // Enter your Device Name
+        const int _deviceID             =   3;                          // This is for My Specific use case
+        const int _webServerPort        =   80;                         // The port for web server
+        char* _hardwareID;                                              //MAC Address of the board
+};
+#endif
