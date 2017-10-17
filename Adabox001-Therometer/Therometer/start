@@ -1,0 +1,3 @@
+Simple Project using the parts from AdaBox001 to create a thermometer. 
+
+The Text scrolles across the Featherwing NeoPixel matrix and is set to change colour at various temperatures. 
