@@ -1,0 +1,3 @@
+GY6050	KEYWORD1
+initialisation	KEYWORD2
+refresh	KEYWORD2
