@@ -1,0 +1,25 @@
+# The Era of Micromanufacturing
+
+_Captured: 2017-10-17 at 13:43 from [www.digikey.com](https://www.digikey.com/en/blog/micromanufacturing?utm_source=twitter&utm_medium=Social&utm_campaign=posts)_
+
+![](https://www.digikey.com/-/media/Images/Blogs/2017/October/Micromanufacturing/micromanufacturing-img1.jpg?ts=805f1da6-9dbd-4161-878a-234f292f785f&la=en-US)
+
+Micromanufacturing is making manufacturing in the US relevant again! After 250 years of perfecting the fundamentals of the industrial age and squeezing every possible benefit from gaining scale we are now entering the age of the customer. To quote Chris Anderson's book, "The Long Tail," customization is now about figuring out how to sell less of more things. Lean principles and innovative supply chain techniques started this movement at companies like Dell and Harley Davidson, and with advanced robotics it has now extended to retailers such as Nike and quick turn board contractors in our industry.
+
+For the first half of the 20th century, the focus was on mass manufacturing to make products affordable for consumers. The industrial revolution taught us the rules of business that are etched in the foundations of our minds--scale drives lower costs, allowing products to be more affordable, and it drives volume by reaching a larger customer base. We accepted the tradeoffs of lack of choice, flexibility, and nimbleness. (Correction: we accepted those tradeoffs until we became a global economy which resulted in jobs moving off shore to lower-cost regions and greatly impacting our DTAM.)
+
+Like the famous Burger King slogan "have it your way," customers have come to expect service their way, and we now have the ability to respond. One of the fastest growing segments of Digi-Key's business is quick turn contract manufacturers whose value proposition is built on speed and flexibility. Interfacing with us through APIs, these digital leading companies are able to respond to customer quotes faster and place orders on us without any redundant entering of POs or bills of material. Leveraging our high availability of in-stock product with same day shipping, these customers are able to respond to greatly reduced turnaround times and create additional value for their end customers.
+
+![](https://www.digikey.com/-/media/Images/Blogs/2017/October/Micromanufacturing/micromanufacturing-img2.jpg?ts=95c91799-29bd-4175-b3e1-14a521b8d277&la=en-US)
+
+Set up time has historically been the Achilles' heel of small run production. But now, high-end pick-and-place machines can handle parts fed from cut tape and nonstandard tray sizes leveraging the speed, quality, and consistency of the automated equipment.
+
+The timing of these enhanced capabilities could not be occurring at a better time. Through the emphasis on STEM educational programs, we've never had more students entering the workforce with science, engineering, and technology backgrounds. Their interest and curiosity is supported by a high number of intuitive development platforms such as Arduino and Raspberry Pi, which has removed the intimidation barrier for students to utilize high-end sensors and processing power. Forums sharing open source code and methodologies are readily available, and events such as Maker Faire accelerate shared learning. The final barrier for young entrepreneurs is capital. That solution has arrived in the form of crowd funding.
+
+Digi-Key's model is ideally aligned to the business elements required to support this model. We are committed to maintaining the largest selection of components, in stock, for same day delivery. We're also the recognized leader in available APIs to support digital connectivity, and we commit to expand this library of services to remove latency and unnecessary delays from the quote and ordering process. Lastly, we've just broken ground on the largest expansion in our history, increasing our footprint in Thief River Falls, Minnesota by almost 4X. We're committed and proud to play a small role in enabling the innovation that happens every day through the engineers we serve.
+
+Innovation in the US and Europe has never been questioned. Micromanufacturing is resulting in a fundamental shift that we believe will have a sustained impact in these regional economies by increasing the flexibility of inventors and engineers to see their conceptual ideas turned into products and prototypes more quickly. We're excited to be a part of this ecosystem and eager to see the anticipated results over the upcoming years.
+
+### About the Author
+
+Dave Doherty, President and Chief Operating Officer at Digi-Key Electronics, brings over 30 years of professional experience between the semiconductor manufacturing and electronics distribution industries, the last 10 with Digi-Key. His experience and knowledge enables him to provide great insight and innovative leadership within Digi-Key and the electronics industry. Dave holds a BSEE from Worcester Polytechnic Institute, an MBA from Babson College and has served as President of the Educational Foundation Board for the Electronics Component Industry Association as well as the chairperson for their Executive Conference.
