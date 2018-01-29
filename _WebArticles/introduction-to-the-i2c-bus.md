@@ -1,6 +1,6 @@
 # Introduction to the I2C Bus
 
-_Captured: 2017-09-14 at 11:47 from [www.allaboutcircuits.com](https://www.allaboutcircuits.com/technical-articles/introduction-to-the-i2c-bus/)_
+_Captured: 2018-01-29 at 15:39 from [www.allaboutcircuits.com](https://www.allaboutcircuits.com/technical-articles/introduction-to-the-i2c-bus/)_
 
 This article covers the essential characteristics and prominent advantages of the Inter-Integrated Circuit (aka I2C) serial-communications protocol.
 
